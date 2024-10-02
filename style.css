@@ -19,6 +19,26 @@ body {
   overflow: hidden;
   perspective: 1000px;
 }
+/* For devices with a width of 768px or less (tablets, small screens) */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* For devices with a width of 480px or less (mobile devices) */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    flex-direction: column; /* Stack elements vertically */
+  }
+}
 .night {
   position: fixed;
   left: 50%;
